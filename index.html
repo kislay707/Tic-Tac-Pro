@@ -1,23 +1,26 @@
-
 <!DOCTYPE html>
 
 <html> 
 
 
  <head>
-    <meta charset="utf-8">
-    <title>revert this</title>
-    <meta property=”og:title” content=”Your eye-catching title here” />
-    <meta property="og:url" content="https://en.wikipedia.org/wiki/Biographical_film"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:site_name" content="Adobe XD"/>
-    <meta property="og:description" content="tic tag game which is cool"/>
-    <meta property="og:image" content="http://www.gstatic.com/webp/gallery/1.jpg"/>
+    <title>My Processing Program</title> 
  </head>
 
+
  <body>
- 
+<!--     <button onclick="TogetherJS(this); return false;">Start TogetherJS</button>-->
+    <canvas id="mycanvas"></canvas>
  </body>
 
 
-</html>
+
+<!-- <script src="https://togetherjs.com/togetherjs-min.js"></script>< including the together.js library-->
+ <script src="processing-1.3.6.min.js"></script> <!-- Include the processing.js commands -->
+ <script src="GameCode.js"></script> <!-- The actual source code for your program -->
+ <script type="application/javascript">
+  var canvas = document.getElementById("mycanvas"); //get the canvas that processingjs will use
+  var processingInstance = new Processing(canvas, sketchProc); //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+ </script>
+
+</html> 
